@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Play Cinema App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content="Play Cinema Demo App">
+  <meta name="author" content="Miguel Manchego">  
+
+<link rel="stylesheet" href="css/themes/playcinema.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/custom.css" />
+    
+    
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/playcinema.js"></script>
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<div data-role="page" id="portada">  
+   <div data-role="content" >
+        <div id="logoPortada">   
+            <img src="img/logo.png" />
+        </div> 
+      <div class="ui-grid-b" id="mainNav">
+        <div class="ui-block-a">
+            <a href="#cartelera" id="carteleraLink">
+            Cartelera
+            </a>
+        </div>
+	   <div class="ui-block-b">
+            <a href="#estrenos" id="estrenosLink">
+            Estrenos
+            </a>
+        </div>
+	   <div class="ui-block-c">
+            <a href="#promos" id="promosLink">
+            Promos
+            </a>
+        </div>
+      </div>
+   </div>   
+</div>
+<!-- /PORTADA -->
+
+<!-- cartelera -->
+<div data-role="page" id="cartelera" data-title="Cartelera">
+   <div data-role="header">
+      <h1>
+        <a href="#portada">
+        <img src="img/mini-logo.png" />
+        </a>
+      </h1> 
+   </div>
+   <div data-role="content" id="carteleraContent">   
+      <h2 class="page-title">Cartelera</h2>
+      <ul data-role="listview" data-split-icon="gear" id="carteleraList">
+        
+      </ul>      
+      
+   </div>
+   <div data-role="footer" class="ui-bar">
+      <a href="#portada" data-theme="b" data-role="button" data-icon="back">Volver</a>
+   </div>
+</div>
+<!-- /cartelera -->
+
+
+<!-- estrenos -->
+<div data-role="page" id="estrenos" data-title="Estrenos">
+   <div data-role="header">
+      <h1>
+        <a href="#portada">
+        <img src="img/mini-logo.png" />
+        </a>
+      </h1> 
+   </div>
+   <div data-role="content">   
+      <p>Puedes ver todas mis guitarras</p>      
+      <p><a href="#portada">volver</a></p>   
+   </div>
+   <div data-role="footer" class="ui-bar">
+      <a href="#portada" data-theme="b" data-role="button" data-icon="back">Volver</a>
+   </div>
+</div>
+<!-- /estrenos -->
+
+
+<!-- pelicula -->
+<div data-role="page" id="pelicula">
+   <div data-role="header">
+      <h1>
+        <a href="#portada">
+        <img src="img/mini-logo.png" />
+        </a>
+      </h1> 
+   </div>
+
+   <div data-role="content"></div>
+
+   <div data-role="footer" class="ui-bar">
+      <a href="#cartelera" data-theme="b" data-role="button" data-icon="back">Volver</a>
+   </div>
+</div>
+<!-- /pelicula -->
+
+  
+</body>
+</html>

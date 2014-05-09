@@ -1,0 +1,85 @@
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+html, body {
+    height : 100%;    
+}
+#portada {
+    background-color: #202020;
+    height: 100%;
+}
+#portada .ui-content{
+    background-color: #202020;    
+    text-align: center;
+    min-height: 100%;    
+}
+.ui-body-c, .ui-overlay-c {
+    text-shadow: none; 
+    color:#aaa; 
+}
+.ui-header .ui-title, .ui-footer .ui-title {  
+  margin: 0.1em 30%;  
+}
+.ui-header .ui-title {
+    padding: 3px 0px;
+}
+
+h2.page-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}    
+/***************************************
+  Navigation
+****************************************/
+#logoPortada {
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+#mainNav {
+    background: transparent;
+    position: absolute;
+    bottom: 20px;
+    width: 92%;
+    left: 50%;
+    margin-left: -46%;
+}
+#mainNav a{
+    display: block;
+    color:#FFF;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #009ee0;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+    a#carteleraLink {
+        background-image: url(../img/cartelera.png);
+        background-position: center 15px;
+    }
+    a#estrenosLink {
+        background-image: url(../img/estrenos.png);
+    }
+    a#promosLink {
+        background-image: url(../img/promos.png);
+    }
+    
+    #mainNav a:hover{
+        background-color: #96bf0d;
+        padding-top: 55px;
+        margin-top: 0px;
+        transition: 0.5s;
+    }
+a#estrenosLink, a#promosLink{
+    border-left: 1px solid #FFF;
+}
+
+#carteleraContent {
+    min-height: 100%;
+    background-image: url(../img/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}  
